@@ -1,0 +1,341 @@
+@import url(/assets/fonts/Montserrat/stylesheet.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+body {
+  background: #eaeaea;
+  font-family: "Montserrat";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header .wrapper {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  margin: 10px;
+}
+.header__logo .header-logo__img {
+  width: 85px;
+  height: 30px;
+  background-image: url(/assets/sprites/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.header-chouse {
+  padding-left: 30px;
+  margin-left: 75px;
+  width: 100%;
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  color: #101010;
+  background-image: url(/assets/icons/phone-icon.png);
+  background-repeat: no-repeat;
+  background-size: 15px 21px;
+}
+
+.header__basket-box {
+  width: 110px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-bb__heart-img {
+  width: 62px;
+  height: 60px;
+  background-image: url(/assets/icons/heart.png);
+  background-repeat: no-repeat;
+}
+
+.header-bb__basket-img {
+  width: 24px;
+  height: 24px;
+  background-image: url(/assets/icons/basket.png);
+  background-repeat: no-repeat;
+}
+
+.content .wrapper {
+  justify-content: center;
+}
+
+.content__map {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__map-sec {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 760px;
+  margin: 27px 0 44px 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.map-sec__heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  margin: 15px 0 20px 17px;
+  color: #1c1c27;
+}
+
+.map-sec__map {
+  width: 722px;
+  height: 424px;
+  margin: 0 18px;
+  background-color: #838383;
+}
+
+.map-sec__text-box {
+  margin: 13px 0 27px 17px;
+  padding-left: 33px;
+  background-image: url(/assets/icons/address-point.png);
+  background-repeat: no-repeat;
+  background-size: 21px 22px;
+  background-position: left;
+}
+
+.map-sec-text-box__heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.map-sec-text-box__subheading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #838383;
+}
+
+.map-sec__phone {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 40px;
+  padding-left: 60px;
+  background-image: url(/assets/icons/phone-handset.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: left;
+}
+
+.content__links {
+  width: 100%;
+  max-width: 97px;
+  height: 431px;
+  margin-left: 60px;
+  margin-top: 27px;
+}
+
+.content__links-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 97px;
+  height: 431px;
+}
+.content__links-box .content__link {
+  width: 97px;
+  height: 97px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  background-size: 40px 40px;
+  background-position: center;
+}
+
+.footer {
+  margin-top: 60px;
+}
+.footer .wrapper {
+  background: #fff;
+  border-radius: 30px 30px 0 0;
+  height: 150px;
+  padding: 23px 27px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-nav__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.footer__service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-service__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.language-box {
+  width: 100%;
+  max-width: 152px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/assets/sprites/world.svg);
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}
+
+.language-box__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #101010;
+}
+
+.footer-social__box {
+  width: 175px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.footer-social__link {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.footer-social__link-vk {
+  background-image: url(/assets/sprites/VK.svg);
+}
+
+.footer-social__link-inst {
+  background-image: url(/assets/sprites/Instagram.svg);
+}
+
+.footer-social__link-tg {
+  background-image: url(/assets/sprites/Telegram.svg);
+}
+
+.footer-social__link-whts {
+  background-image: url(/assets/sprites/Whatsapp.svg);
+}
+
+.span-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #ffa542;
+}/*# sourceMappingURL=desctop-contacts.css.map */

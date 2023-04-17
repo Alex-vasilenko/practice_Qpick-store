@@ -1,0 +1,384 @@
+// Reset
+@import "../reset";
+
+// Fonts
+@import "../fonts";
+
+body {
+  background: #eaeaea;
+  font-family: "Montserrat";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//                wrapper
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+//                  header
+
+@import "../components/header";
+
+//                  content
+
+.content {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  &__delivery {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.content-delivery {
+  &__heading {
+    margin-bottom: 12px;
+
+    text-align: left;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+
+  &__box {
+    width: 445px;
+    height: 513px;
+
+    padding: 23px 31px 32px 36px;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+
+  &__img {
+    width: 375.3px;
+    height: 146px;
+
+    background: #eaeaea;
+    border-radius: 10px;
+
+    margin: 20px 0 22px;
+  }
+
+  &__address {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+
+    padding-left: 30px;
+    background-image: url(/assets/icons/address-point.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+
+    margin-bottom: 18px;
+  }
+
+  &__input-cover {
+    width: 100%;
+    height: 45px;
+
+    background: #d6d6d6;
+    border-radius: 15px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #8e8e8e;
+
+    margin-bottom: 10px;
+  }
+
+  &__input-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__input-full {
+    width: 100%;
+  }
+
+  &__input-small {
+    width: 45%;
+  }
+}
+.content-delivery-box {
+  &__heading-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.delivery-box {
+  &__heading-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+  }
+
+  &__heading-price {
+  }
+}
+.input {
+  &:focus {
+    outline: none;
+  }
+
+  width: 50%;
+
+  margin: 14px 0 13px 14px;
+  background-color: inherit;
+  border: none;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #8e8e8e;
+}
+
+//            right side
+.content {
+  &__order {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    height: 100%;
+    margin-top: 36px;
+  }
+
+  &__order-box {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 20px;
+  }
+
+  &__method-pay-box {
+    @extend .content__order-box;
+    margin-top: 14px;
+  }
+
+  &__phone-num-box {
+    @extend .content__order-box;
+    margin-top: 20px;
+  }
+
+  &__btn {
+    margin-top: 18px;
+    &:hover {
+      box-shadow: 0px 0px 20px rgba(67, 216, 84, 0.25);
+      color: #8e8e8e;
+    }
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    width: 100%;
+
+    color: #ffffff;
+
+    padding: 13px 0;
+    background-color: #101010;
+    border-radius: 10px;
+  }
+}
+.content-order {
+  &__heading {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+    margin-bottom: 25px;
+  }
+
+  &__product-strict {
+    display: flex;
+    // justify-content: space-between;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+    margin-bottom: 12px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__product-quantity {
+    width: 35px;
+  }
+
+  &__product-pos {
+    width: 100%;
+    max-width: 324px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+
+  &__product-price {
+  }
+
+  &__delivery-strict {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 35px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+    margin-bottom: 12px;
+  }
+
+  &__delivery-text {
+  }
+
+  &__delivery-price {
+  }
+
+  &__toPay-strict {
+    @extend .content-order__delivery-strict;
+    padding-left: 35px;
+  }
+
+  &__toPay-text {
+  }
+
+  &__toPay-price {
+  }
+}
+.product-pos-quantity {
+}
+.product-pos-price {
+}
+.product-delivery-price {
+}
+.product-toPay-price {
+}
+.content-method-pay {
+  &__heading {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+  }
+
+  &__check {
+  }
+
+  &__input-promocode {
+    background-image: url(/assets/icons/promocode.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-height: 25px;
+  }
+}
+  .content-method-pay__input-promocode .input{
+    margin: 0;
+    margin-left: 25px;
+  }
+
+.content-method-pay-check {
+  &__change {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+
+    padding-left: 25px;
+    margin: 17px 0 20px;
+
+    background-image: url(/assets/icons/visa-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.content-phone-num {
+  &__heading {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  &__input-number {
+
+    background: #d6d6d6;
+    border-radius: 15px;
+  }
+}
+
+//                  /. content
+
+//                      footer
+
+@import "../components/footer";

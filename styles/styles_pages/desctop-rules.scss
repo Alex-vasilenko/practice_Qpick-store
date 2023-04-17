@@ -1,0 +1,74 @@
+// Reset
+@import "../reset";
+
+// Fonts
+@import "../fonts";
+
+body {
+  background: #eaeaea;
+  font-family: "Montserrat";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//                wrapper
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+//                  header
+
+@import "../components/header";
+
+//                  content
+.content {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 690px;
+}
+}
+
+.content__card {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.content-card__subheading {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 21px;
+
+color: #1C1C27;
+
+margin: 15px 30px;
+
+}
+.content-card__text {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+
+color: #000000;
+
+  padding: 0 32px 23px 44px;
+}
+
+
+//                  /. content
+
+//                      footer
+
+@import "../components/footer";

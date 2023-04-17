@@ -1,0 +1,169 @@
+// Reset
+@import "../reset";
+
+// Fonts
+@import "../fonts";
+
+body {
+  background: #eaeaea;
+  font-family: "Montserrat";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//                wrapper
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+//                  header
+
+@import "../components/header";
+
+//                  content
+.content {
+  .wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  h3 {
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #1c1c27;
+  }
+}
+.content__earphones {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  font-family: inherit;
+}
+.content-earphones__heading {
+}
+.full-item {
+  width: 349px;
+  height: 408px;
+  display: flex;
+
+  padding: 15px 22px 35px 22px;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: #fff;
+  border-radius: 30px;
+}
+.content-earphones__item {
+}
+
+.earphone-item__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #1c1c27;
+}
+.span-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+
+  color: #ffa542;
+}
+
+.earphone-item__star:before {
+  width: 23px;
+  height: 23px;
+}
+.earphone-item__star {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  margin-top: 25px;
+  padding-left: 30px;
+  background-image: url(/assets/icons/star.png);
+  background-repeat: no-repeat;
+
+  color: #838383;
+}
+.earphones-item__img {
+  max-width: 220px;
+  width: 100%;
+  max-height: 240px;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 15px auto 55px;
+}
+.earphones-item__img-1 {
+  background-image: url(/assets/img/earphone-1.png);
+}
+.earphones-item__img-2 {
+  background-image: url(/assets/img/earphone-2.png);
+}
+.earphones-item__img-3 {
+  background-image: url(/assets/img/earphone-3.png);
+}
+.earphones-item__img-4 {
+  background-image: url(/assets/img/earphone-1.png);
+}
+.earphones-item__img-5 {
+  background-image: url(/assets/img/earphone-2.png);
+}
+.earphones-item__img-6 {
+  background-image: url(/assets/img/earphone-3.png);
+}
+
+.content__wireless {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.content-wireless__heading {
+}
+.content-wireless__item {
+}
+.wireless-item__name {
+}
+.wireless-item__img-1 {
+  background-image: url(/assets/img/airpods.png);
+}
+.wireless-item__img-2 {
+  background-image: url(/assets/img/airpods-2.png);
+}
+.wireless-item__img-3 {
+  background-image: url(/assets/img/earphone-4.png);
+}
+
+//                  /.content1
+
+//                      footer
+
+@import "../components/footer";

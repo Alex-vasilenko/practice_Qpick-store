@@ -1,0 +1,417 @@
+@import url(/assets/fonts/Montserrat/stylesheet.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+body {
+  background: #eaeaea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header .wrapper {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  margin: 10px;
+}
+
+.header-logo__img {
+  width: 85px;
+  height: 30px;
+  background-image: url(/assets/sprites/logo.svg);
+  background-repeat: no-repeat;
+}
+
+.header-chouse {
+  padding-left: 30px;
+  margin-left: 75px;
+  width: 100%;
+  height: 21px;
+  line-height: 130%;
+  background-image: url(/assets/icons/phone-icon.png);
+  background-repeat: no-repeat;
+  background-size: 15px 21px;
+}
+
+.header__basket-box {
+  width: 110px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-bb__heart-img {
+  width: 62px;
+  height: 60px;
+  background-image: url(/assets/icons/heart.png);
+  background-repeat: no-repeat;
+}
+
+.header-bb__basket-img {
+  width: 24px;
+  height: 24px;
+  background-image: url(/assets/icons/basket.png);
+  background-repeat: no-repeat;
+}
+
+.banner .wrapper {
+  background: #101010;
+  height: 197px;
+  border-radius: 30px;
+  background-image: url(/assets/img/iPhone-banner.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.banner__text {
+  max-width: 283px;
+  margin-left: 230px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.content .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-goods {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.content__heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #838383;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.simple-item {
+  width: 349px;
+  height: 408px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.case-item__img {
+  width: 151px;
+  height: 292px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 25px auto 20px;
+}
+
+.case-item__img-1 {
+  background-image: url(/assets/img/case-glass.png);
+}
+
+.case-item__img-2 {
+  background-image: url(/assets/img/case-silicon.png);
+}
+
+.case-item__img-3 {
+  background-image: url(/assets/img/case-lather.png);
+}
+
+.case-item__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1c1c27;
+}
+
+.content__earphones {
+  flex-wrap: wrap;
+}
+
+.full-item {
+  width: 349px;
+  height: 408px;
+  display: flex;
+  padding: 15px 22px 35px 22px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.earphone-item__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #1c1c27;
+}
+
+.span-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #ffa542;
+}
+
+.earphone-item__star:before {
+  width: 23px;
+  height: 23px;
+}
+
+.earphone-item__star {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  margin-top: 25px;
+  padding-left: 30px;
+  background-image: url(/assets/icons/star.png);
+  background-repeat: no-repeat;
+  color: #838383;
+}
+
+.earphones-item__img {
+  max-width: 220px;
+  width: 100%;
+  max-height: 240px;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 15px auto 55px;
+}
+
+.earphones-item__img-1 {
+  background-image: url(/assets/img/earphone-1.png);
+}
+
+.earphones-item__img-2 {
+  background-image: url(/assets/img/earphone-2.png);
+}
+
+.earphones-item__img-3 {
+  background-image: url(/assets/img/earphone-3.png);
+}
+
+.earphones-item__img-4 {
+  background-image: url(/assets/img/earphone-1.png);
+}
+
+.earphones-item__img-5 {
+  background-image: url(/assets/img/earphone-2.png);
+}
+
+.earphones-item__img-6 {
+  background-image: url(/assets/img/earphone-3.png);
+}
+
+.wireless-item__img-1 {
+  background-image: url(/assets/img/airpods.png);
+}
+
+.wireless-item__img-2 {
+  background-image: url(/assets/img/airpods-2.png);
+}
+
+.wireless-item__img-3 {
+  background-image: url(/assets/img/earphone-4.png);
+}
+
+.footer {
+  margin-top: 60px;
+}
+.footer .wrapper {
+  background: #fff;
+  border-radius: 30px 30px 0 0;
+  height: 150px;
+  padding: 23px 27px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-nav__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.footer__service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-service__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.language-box {
+  width: 100%;
+  max-width: 152px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/assets/sprites/world.svg);
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}
+
+.language-box__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #101010;
+}
+
+.footer-social__box {
+  width: 175px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.footer-social__link {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.footer-social__link-vk {
+  background-image: url(/assets/sprites/VK.svg);
+}
+
+.footer-social__link-inst {
+  background-image: url(/assets/sprites/Instagram.svg);
+}
+
+.footer-social__link-tg {
+  background-image: url(/assets/sprites/Telegram.svg);
+}
+
+.footer-social__link-whts {
+  background-image: url(/assets/sprites/Whatsapp.svg);
+}
+
+.span-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #ffa542;
+}/*# sourceMappingURL=style.css.map */
